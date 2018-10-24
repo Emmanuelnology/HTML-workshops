@@ -1,3 +1,41 @@
+body{
+    background-color: #eddede;
+}
+
 h1{
-    color:lightsalmon;
+    color: #e88f54;
+    text-align: center;
+}
+
+h3{
+    font-variant: small-caps;
+}
+
+h2{
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+}
+
+p{
+    font-style: italic;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 3em;
+    text-indent: 15%;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.1em;
+    color: rgb(23,48,79);
+}
+
+span{
+    color: orangered;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 0.2em;
+}
+
+i{
+    font-style: normal;
+    color: darkorchid;
 }
