@@ -1,64 +1,47 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-        <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <style>
-        body {
-            font-size: 15px;
+        * {
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color:pink;
+            margin: 0;
+        }
+        
+        body>div{
+            background-color: red;
+            width :100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        nav {
+            padding: 20px;
             background-color:red;
-            background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg/1200px-Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg');
-            background-size:cover;
-
-        }
-
-        h1 {
-            color:rgba(0,0,255,0.6);
-            text-align: left;
+            color:white;
         }
         
-        p {
-            font-weight: lighter;
-            color:rgba(255,255,255,0.8);
-            font-size: 2em;
-            letter-spacing: 0.05em;
-            line-height:2em;
-            text-indent: 20%;
-            font-family: 'Charmonman', serif;
-        }
-        
-        i {
-            font-style: normal;
-            color: red;
-        }
-        
-        tr {
-            background-color:#ddd;
-            height: 100px;
-            vertical-align: center;
-        }
-
-        li {
-            text-transform: uppercase;
+        main {
+            padding: 20px;
+            background-color:white;
+            color:black;
         }
         
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>About me</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-    </nav>
-    <main>
-        <h1> About me </h1>
-        <p> 
-            <i>Italic text</i> Privateer skysail grapple run a rig scuppers case shot marooned line fathom fore Plate Fleet hang the jib Brethren of the Coast interloper. Lugger red ensign rum barkadeer ye scallywag take a caulk yo-ho-ho jury mast bucko league matey chantey scurvy to go on account. Rutters Spanish Main sutler hang the jib Gold Road boatswain heave down log sheet bilge water coxswain driver brigantine execution dock Sail ho. Ye snow lugsail gibbet spirits parrel landlubber or just lubber tackle Barbary Coast come about piracy Pirate Round starboard belaying pin swab. Scourge of the seven seas hulk capstan spanker pirate hornswaggle cog bounty holystone lanyard hempen halter warp scuttle port knave. 
-        </p>
-        
-        <p>Hello <span style="text-transform: capitalize" >craig</span></p>
-        <p style="text-transform: lowercase">CraiG@craig.craig</p>
-    </main>
+    <div>
+        <nav>
+            Nav
+        </nav>
+        <main>
+            Content
+        </main>
+    </div>
 </body>
 </html>
