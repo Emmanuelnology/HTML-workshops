@@ -1,0 +1,23 @@
+h1{
+    color: darkblue;
+    size: medium;
+}
+h2{
+    color: rgb(58,54,123);
+}
+h3{
+    color: royalblue;
+}
+p{
+    font-style: normal;
+    color: #4c6579e5;
+    font-size: 17px;
+    font-weight: lighter;
+    text-indent: 5%;
+    font-family: Ubuntu;
+}
+blockquote{
+    font-style: italic;
+    color: rgb(58,54,123);
+
+}
