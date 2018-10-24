@@ -4,6 +4,7 @@ body{
     color: maroon;
     font-family: 'Open Sans', sans-serif;
     background-color: rgb(221 220 68);
+    background-image: url("bg.jpg");
 }
 
 h1{
