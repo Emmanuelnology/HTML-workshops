@@ -1,12 +1,25 @@
+
+
 body{
-    color:maroon;
+    color: maroon;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(221 220 68);
 }
 
 h1{
+    text-align: center;
     color: blue;
     font-size: 35px;
+    font-weight: 800;
+}
+
+h1, h2, h3{
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
     text-align: justify;
+    font-style: italic;
+    font-variant: normal;
 }
