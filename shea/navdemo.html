@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Navigation Bar
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        nav {
+            background-color: #53f442;
+            color: white;
+            text-transform: uppercase;
+            padding: 1.25em;
+        }
+
+        #brand {
+            margin-right: 3em;
+        }
+        
+        .bold {
+            font-weight: bold;
+        }
+
+        nav>* {
+            display: inline;
+        }
+          
+        nav>ul {
+            list-style: none;
+        }
+
+        ul>li {
+            display: inline-block;
+            margin: 0 0 0 8em;
+            float: right;
+        }
+
+        nav a {
+            color: inherit;
+            padding: 0.5em;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #53f442;
+            border-radius: 2px;
+        }
+        
+        main {
+            background-color: #ffffff;
+        }
+        
+        body {
+            font-family:"krub", sans-serif;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="brand">
+            <i class="fa fa-500px"></i>
+            Ink<span class="bold">blot</span>
+        </div>
+        <ul id="nav-links">
+            <li>
+                <a href="#">Nav 1</a>
+            </li>
+            <li>
+                <a href="#">Nav 2</a>
+            </li>
+            <li>
+                <a href="#">Nav 3</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        Content
+    </main>
+    <footer>
+
+    </footer>
+</body>
