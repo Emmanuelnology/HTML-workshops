@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <link rel="stylesheet" type="text/css" href="buttons.css">
+    <link rel="stylesheet" type="text/css" href="box_model.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+</head>
+
+<style>
+    *{
+        box-sizing: border-box
+    }
+    nav{
+        background-color: red;
+        color: white;
+        grid-area: nav;
+    }
+    header{
+        background-color: yellow;
+        grid-area: header;
+    }
+    main{
+        background-color: darkblue;
+        color: white;
+        grid-area: content;
+    }
+    footer{
+        background-color: lightblue;
+        grid-area: footer;
+    }
+
+    aside{
+        background-color: salmon;
+        grid-area: sidebar;
+    }
+    
+    body>*{
+        padding:15px;
+    }
+    body{
+        margin: 0;
+        display: grid;
+        grid-template-areas:
+        "nav nav"
+        "header header"
+        "sidebar content"
+        "footer footer";
+        grid-template-columns: 0.5fr 2fr;
+        grid-gap: 5px;
+    }
+</style>
+
+<body>
+    <nav>
+        nav
+    </nav>
+    
+    <header>
+        header
+    </header>
+
+    <aside>
+        sidebar
+    </aside>
+    
+    <main>
+        main
+    </main>
+    
+    <footer>
+        footer
+    </footer>
+    
+</body>
