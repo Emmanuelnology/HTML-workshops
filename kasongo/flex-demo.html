@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!-- By Shutsha Kasongo  -->
+<head>
+    <title>Fair-play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        * {
+            box-sizing: content-box;
+            background-color: lightgray;
+        }
+
+        #boxes1 {
+            background-color: gray;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: darkgreen;
+            width: 200px;
+            height: 100px;
+            border: 1px solid lightgreen;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+        }
+
+        .box2 {
+            flex: 2;
+        }
+        </style>
+</head>
+<body>
+    <div id="boxes1">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box box2">C</div>
+        <div class="box box2">D</div>    
+    </div>
+</body>
+</html>

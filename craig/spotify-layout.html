@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin :0;
+            display: grid;
+            grid-template-areas: 
+                    "nav nav"
+                    "header header"
+                    "content content"
+                    "controller social";
+                grid-template-columns: 1fr 2fr;
+          
+            grid-gap: 3px;
+        }
+
+        body>* {
+            padding: 15px;
+        }
+
+        nav {
+            background-color:red;
+            color:white;
+            grid-area: nav;
+        }
+
+        header {
+            background-color: yellow;
+            grid-area: header;
+        }
+
+        #playlist-browser {
+            background-color:darksalmon;
+            grid-area: playlist;
+            display:none;
+        }
+
+        #social {
+            background-color:darksalmon;
+            grid-area: social;
+        }
+
+        main {
+            background-color: darkblue;
+            color:white;
+            grid-area: content;
+        }
+
+        footer {
+            background-color: lightblue;
+            grid-area: controller;
+        }
+
+
+         @media only screen and (min-width: 400px) {
+            body {
+                grid-template-areas: 
+                "nav nav nav"
+                "playlist header social"
+                "playlist content social"
+                "controller controller controller";
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+
+            #playlist-browser {
+                display:block;
+            }
+        }
+
+        @media only screen and (min-width: 800px) {
+            body {
+                grid-template-areas: 
+                "playlist nav nav"
+                "playlist header social"
+                "playlist content social"
+                "controller controller controller";
+                grid-template-columns: 1fr 3fr 1fr;
+            }
+            nav {
+                display:none;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+        nav
+    </nav>
+    <header>
+        header
+    </header>
+    <aside id="playlist-browser">
+        playlist browser
+    </aside>
+    <aside id="social">
+        social
+    </aside>
+    <main>
+        main
+    </main>
+    <footer>
+       controller
+    </footer>       
+</body>
+</html>
+    

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<!-- By Shutsha Kasongo  -->
+<head>
+    <title>Fair-play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        nav {
+            padding: 5px;
+            display:flex;
+            flex-direction:column;
+            background-color: lightblue;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 12px;
+            text-decoration: none;
+            background-color: lightblue;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .boxes1 {
+            width: 10px;
+        }
+
+        .nav1 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid darkblue;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            justify-content: center;
+        }
+
+        .nav2 {
+            flex: 2;
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width: 400px) {
+                #boxes1 {
+                    display: flex
+                    flex: 1;
+                    flex-direction: column;  
+                    justify-content: center;                  
+                    background-color: lightblue;
+                }
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <ul id="boxes1">
+            <div class="box nav1">
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="news.asp">News</a></li>
+            </div>
+            <div class="box nav2">
+                    <li><a href="news.asp">Info</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        cool
+    </main>
+</body>
+</html>

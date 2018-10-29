@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin :0;
+            display: grid;
+            grid-template-areas: 
+                "nav nav"
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 5px;
+        }
+
+        body>* {
+            padding: 15px;
+        }
+
+        nav {
+            background-color:red;
+            color:white;
+            grid-area: nav;
+        }
+
+        header {
+            background-color: yellow;
+            grid-area: header;
+        }
+
+        aside {
+            background-color:darksalmon;
+            grid-area: sidebar;
+        }
+
+        main {
+            background-color: darkblue;
+            color:white;
+            grid-area: content;
+        }
+
+        footer {
+            background-color: lightblue;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        Navigation
+    </nav>
+    <header>
+        Header
+    </header>
+    <aside>
+        Sidebar
+    </aside>
+    <main>
+        Main
+    </main>
+    <footer>
+       Footer
+    </footer>       
+</body>
+</html>
+    
