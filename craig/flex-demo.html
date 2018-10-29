@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin:0;
+        }
+        
+        p {
+            margin:0;
+            padding:0;
+        }
+        
+        nav {
+            padding: 6px;
+            display:flex;
+            flex-direction:column;
+            background-color: goldenrod;
+        }
+
+        nav p {
+            margin: 6px 24px 6px 3px;;
+            padding: 3px;
+        }
+        
+        nav ul {
+            padding: 0;
+            margin:0px;
+            list-style-type: none;
+        }
+        
+        nav li {
+            border-bottom: 1px dotted maroon;
+            padding:3px;
+        }
+        
+        nav li:hover {
+            background-color:maroon;
+            color:white;
+            cursor: pointer;
+        }
+        
+        nav li:first-child{
+            border-top: 1px dotted maroon;
+            
+        }
+
+        nav #right-link li:first-child {
+            border-top:none;
+        }
+
+        #brand {
+            display: flex;
+            flex-direction:column;
+        }
+
+        main {
+            background-color: blue;
+            padding:15px;
+        }
+
+        #nav-toggle {
+            position: absolute;
+            right: 6px;
+            padding: 6px 6px;
+        }
+
+        #nav-toggle:hover {
+            background-color: maroon;
+            cursor: pointer;
+            color:white;
+        }
+        
+        @media only screen and (min-width:400px) {
+            nav {
+                flex-direction:row;
+                justify-content: space-between;
+            }
+            
+            #brand {
+                flex-direction: row;
+            }
+
+            nav ul {
+                margin: 6px 3px;
+            }
+
+            nav li {
+                display: inline-block;
+                border: none;
+            }
+
+            nav li:first-child {
+                border: none;
+            }
+
+            #nav-toggle {
+                display:none;
+            }
+
+        }
+        
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.js"
+    integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        
+        <div id="brand">
+            <p><i class="fa fa-taxi"></i> Taxi</p>
+            <ul class="dropdown">
+                <li>Link 1</li>
+                <li>Link 2</li>
+            </ul>
+        </div>
+        <div id="right-link">
+            <ul class="dropdown">
+                <li>Link 3</li>
+            </ul>
+        </div>
+        <i id="nav-toggle" class="fa fa-caret-up"></i>
+        
+    </nav>
+    <main>
+        Content
+    </main>
+    <script>
+    $('#nav-toggle').click(function(){
+        $('.dropdown').toggle();
+        $('#nav-toggle').toggleClass('fa-caret-down');
+        $('#nav-toggle').toggleClass('fa-caret-up');
+    })
+    </script>
+</body>
+</html>
