@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                display: grid;
+                grid-template-areas: 
+                "nav1 nav1 nav1"
+                "header header header"
+                "nav2 nav2 nav2"
+                "advert advert advert"
+                "sidebar sidebar sidebar"
+                "content content content"
+                "footer footer footer";
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-gap: 1em;
+            }
+
+            body > * {
+                padding: 1em;
+            }
+
+            #nav1 {
+                background-color: red;
+                color: white;
+                grid-area: nav1;
+            }
+            
+            #nav2 {
+                background-color: red;
+                color: white;
+                grid-area: nav2;
+            }
+
+            header {
+                background-color: blue;
+                color: white;
+                grid-area: header;
+            }
+
+            #advert {
+                background-color: purple;
+                color: white;
+                grid-area: advert;
+            }
+
+            aside {
+                background-color: green;
+                color: white;
+                grid-area: sidebar;
+            }
+
+            main {
+                background-color: orange;
+                color: white;
+                grid-area: content;
+            }
+
+            footer {
+                background-color: red;
+                color: white;
+                grid-area: footer;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <nav id="nav1">
+            Nav #1
+        </nav>
+        <header>
+            Header
+        </header>
+        <nav id="nav2">
+            Nav #2
+        </nav>
+        <div id="advert">
+            Advert
+        </div>
+        <aside>
+            Sidebar
+        </aside>
+        <main>
+            Content
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </body>
+</html>
