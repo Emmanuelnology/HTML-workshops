@@ -21,3 +21,49 @@ blockquote{
     color: rgb(58,54,123);
 
 }
+*{
+     - : border-box;
+}
+
+main{
+    width: 100%;
+}
+
+main>div {
+    width: 100%;
+    background-color: teal;
+    margin: 0 auto;
+    max-width: 500px;
+
+    color:white;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    background-image:url('44.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+img{
+    position: center;
+    width: 50%;
+    height: auto;
+}
+div.textbox:hover {
+    background-color:khaki;
+    cursor: pointer;
+}
+
+footer{
+    color:white;
+}

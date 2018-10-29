@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    margin: 0;
+    display: grid;
+    font-family: Ubuntu;
+    grid-template-areas: 
+    "nav1 nav1 nav1"
+    "header header header"
+    "nav2 nav2 nav2"
+    ". advert ."
+    "scores content news";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+}
+
+body > *{
+    padding: 15px;
+}
+#nav1 {
+    background-color: navy;
+    grid-area: nav1;
+}
+
+#nav2{
+    background-color: navy;
+    grid-area: nav2;
+}
+
+header {
+    background-color: navy;
+    grid-area: header;
+}
+
+#advert{
+    background-color: white;
+    color: black;
+    grid-area: advert;
+}
+
+#scores{
+    background-color: rgb(231, 148, 148);
+    grid-area: scores;
+}
+
+#latestnews{
+    background-color: rgb(176, 226, 180);
+    grid-area: news;
+}
+
+main{
+    background-color: rgb(240, 167, 167);
+    grid-area: content;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: center;
+        margin: 0;
+        display: grid;
+        font-family: Ubuntu;
+        grid-template-areas: 
+        "nav1 nav1 nav1"
+        "header header header"
+        "nav2 nav2 nav2"
+        ". advert ."
+        "scores content news";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+    }    
+}

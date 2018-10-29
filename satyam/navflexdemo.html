@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<!-- By Satyam Gehani  -->
+<head>
+    <link href="navflex.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="magic()">
+        magic
+    </button>
+   <nav id="navbar">
+        <div class="hidden" id="container" >
+            <div class="logo"><i class="fa fa-ravelry" aria-hidden="true"></i></div>
+            <div class="link link1"><a href="https://www.spotify.com"> spotify</a></div>
+            <div class="link link1"><a href="https://www.twitter.com">twitter</a></div>
+        </div>
+       <!-- <div id="space">empty space</div>      -->
+       <div>
+            <div id="container1" class="link link3 hidden"><a href="http://www.doge2048.com/">doge</a></div>
+       </div>
+   </nav>
+</body>
+<script>
+    function magic(){
+        var menu = document.getElementById("container");
+        menu.classList.toggle("hidden");
+        var menur = document.getElementById("container1");
+        menur.classList.toggle("hidden");
+    }
+</script>
+
+</html>
