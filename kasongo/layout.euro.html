@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<!-- By Shutsha Kasongo  -->
+<head>
+    <title>Fair-play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-areas:
+            "nav1 nav2"
+            "header header"
+            "sidebar content"
+            "main main"
+            "footer footer";
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1Opx;
+        }
+        
+        body>* {
+            padding: 15px;
+        }
+
+        nav.nav1 {
+            background-color: blue;
+            color: white;
+            grid-area: nav1;
+            padding: 1em;
+        }
+
+         nav.nav2 {
+            background-color: lightblue;
+            color: white;
+            grid-area: nav2;
+            padding: 1em;
+        }
+
+
+        header {
+            background-color: grey;
+            grid-area: header;
+            padding: 1em;
+        }
+
+        aside {
+            background-color: aqua;
+            grid-area: sidebar;
+            padding: 0.5em;
+            display: inline;
+        }
+
+        main {
+            background-color: cadetblue;
+            grid-area: content;
+            padding: 0.5em;
+        }
+
+        footer {
+            background-color: green;
+            grid-area: footer;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="nav1">
+        Eurosport news
+    </nav>
+    <nav class="nav2">
+        Other news
+    </nav>
+    <header>
+        Leicester owner
+    </header>
+    <aside>
+        News 1
+    </aside>
+    <main>
+        <div>
+            News 2
+        </div>
+    </main>
+    <footer>
+        Other news
+    </footer>
+</body>
+</html>
