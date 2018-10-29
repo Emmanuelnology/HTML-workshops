@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<!-- By Shutsha Kasongo  -->
+<head>
+    <title>Fair-play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            display: grid;
+            grid-template-areas:
+            "nav nav"
+            "header header"
+            "sidebar content"
+            "main main"
+            "footer footer";
+            grid-template-columns: 1fr 7fr;
+            grid-gap: 1Opx;
+        }
+        
+        body>* {
+            padding: 15px;
+        }
+
+        nav {
+            background-color: blue;
+            color: white;
+            grid-area: nav;
+            padding: 1em;
+        }
+
+        header {
+            background-color: grey;
+            grid-area: header;
+            padding: 1em;
+        }
+
+        aside {
+            background-color: aqua;
+            grid-area: sidebar;
+            padding: 1em;
+        }
+
+        main {
+            background-color: cadetblue;
+            grid-area: content;
+        }
+
+        footer {
+            background-color: green;
+            grid-area: footer;
+            padding: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        Happy
+    </nav>
+    <header>
+        Nology
+    </header>
+    <aside>
+        <section>
+            So quick
+        </section>
+        <section>
+            Bature
+        </section>>
+        
+    </aside>
+    <main>
+        <div>
+            <h1>La viande</h1>
+        </div>
+    </main>
+    <footer>
+        Coming home
+    </footer>
+</body>
+</html>
