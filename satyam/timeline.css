@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+}
+.story{
+    flex: 1;
+}
+div{
+    color: black;
+}
+.timeline{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: x-large;
+}
+
+.timeline > div {
+    width: 50%;
+    position:relative;
+    padding: 1em;
+}
+
+.timeline > div:nth-child(even) {
+    border-left: 0.125em solid navy;
+}
+.timeline > div:nth-child(odd) {
+    border-right: 0.125em solid navy;
+    text-align: right;
+}
+.timeline > div:nth-child(even)::before {
+    content: " ";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.125em solid orange;
+    background-color: white;
+    position: absolute;
+    top: 1em;
+    left: -0.75em;
+}
+.timeline strong{
+
+    display: block;
+}
