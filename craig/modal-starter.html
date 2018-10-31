@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <style>
         * {
             box-sizing:border-box;
@@ -22,11 +22,41 @@
             padding: 20px;
         }
 
+        .modal {
+            display: none;
+            position: fixed;
+            background-color: yellow;
+            left: 10%;
+            right: 10%;
+            top: 10%;
+            bottom: 10%;
+            padding: 50px;
+            border-radius: 20px;
+            border: 3px dotted black;
+        }
+
+        #blocker{
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.5);
+        }
+
     </style>
 </head>
 <body>
+    <div id="blocker"></div>
+    </div>
+    <div class="modal">
+        <h2>You are now happy!</h2>
+        <button class="js-modal-close">Exit</button>
+    </div>
     <main>
-        <section>  
+        <section>
+            
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula quam, accumsan sed interdum ac, molestie eu nisl. Proin dignissim dui nec elit viverra, sed iaculis metus porta. In ornare magna ut diam volutpat sagittis. Etiam quis sagittis risus, ut tincidunt magna. Nam et justo lobortis, fringilla diam id, feugiat eros. Cras sagittis ipsum sit amet turpis pretium tincidunt. Aenean nec consequat enim. Donec gravida vel eros eu pharetra. Quisque pharetra turpis sagittis lorem maximus dictum.
             </p>
@@ -42,7 +72,7 @@
             <p>
                 Maecenas aliquet nec turpis at fringilla. Maecenas feugiat, quam elementum interdum sagittis, risus nisl pellentesque augue, at suscipit nisl lorem sit amet lacus. Donec enim elit, tincidunt et purus a, malesuada finibus nibh. Donec ultrices metus rhoncus molestie efficitur. Proin aliquam dignissim dolor sit amet bibendum. Aliquam venenatis, est et finibus dapibus, magna lacus facilisis augue, nec maximus eros est et urna. Donec malesuada mattis pulvinar. Integer vel auctor quam, sit amet accumsan orci. Sed placerat varius orci, sed faucibus lacus molestie quis. Mauris id magna nec risus laoreet bibendum. Mauris a ligula ut libero ultrices consectetur eget sit amet nisi. Suspendisse mi ipsum, euismod vitae feugiat eget, posuere in dolor. Curabitur dignissim elit vitae tristique tincidunt.
             </p>
-            
+            <button class="js-modal-open">Make me happy</button>  
             <p>
                 Fusce congue gravida suscipit. Phasellus faucibus, dolor at imperdiet interdum, risus odio auctor elit, ac hendrerit sapien dui quis lorem. Praesent efficitur feugiat nibh id porta. Maecenas mollis libero non eros pretium, non rutrum metus semper. Vestibulum quis massa sollicitudin, facilisis urna fringilla, vulputate sem. Suspendisse id elit ante. Praesent consequat convallis nulla, a suscipit metus tincidunt semper. Praesent aliquam nibh quis lorem gravida, vitae hendrerit ligula maximus. Proin mattis scelerisque aliquam. Duis sit amet convallis metus. Morbi efficitur nunc quis urna dictum auctor. Aenean vel lacus ac erat mollis fringilla. Sed vitae quam augue. Donec sed condimentum enim, vel sollicitudin ante. Donec eu ultrices nulla. Proin magna eros, porta ut auctor vitae, convallis a tellus.
             </p>
@@ -89,8 +119,28 @@
             
         </section>
     </main>
-    <footer>
-        
-    </footer>
+    <script>
+        var scrollPosition;
+
+        $('.js-modal-close').click(function(){
+            $('.modal').fadeOut();
+            $('#blocker').fadeOut();
+            window.removeEventListener('scroll', noscroll);
+        })
+
+        $('.js-modal-open').click(function(){
+            $('.modal').fadeIn();
+            $('#blocker').fadeIn();
+            window.addEventListener('scroll', noscroll);
+        })
+
+        function noscroll() {
+            var el = document.querySelector('div');
+
+            // get scroll position in px
+            console.log(el.scrollLeft, el.scrollTop);
+            window.scrollTo( el.scrollLeft, el.scrollTop);
+        }
+    </script>
 </body>
 </html>
