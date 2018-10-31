@@ -23,27 +23,26 @@
         }
 
         .modal {
-            display:none;
-            position:fixed;
-            left:20%;
-            right:20%;
+            display: none;
+            position: absolute;
+            background-color: pink;
+            left: 20px;
+            right: 20%;
             top:20%;
             bottom:40%;
-            background-color: white;
-            color:black;
-            padding: 20px;
+            padding: 20%;
             border-radius: 20px;
-            border: 1px solid #333;
+            border: 1px solid yellow;
         }
 
         #blocker {
-            display:none;
-            background-color: rgba(0,0,0,0.5);
-            position:fixed;
-            top: 0;
-            right: 0;
+            display: none;
+            position: fixed;
+            background-color:rgb(0,0,0,0.5);
             left: 0;
-            bottom: 0;
+            right: 0;
+            top:0;
+            bottom:0;
         }
 
     </style>
@@ -51,13 +50,12 @@
 <body>
     <div id="blocker"></div>
     <div class="modal">
-        <h2>You are now happy</h2>
-        <button class="js-modal-close">Go away</button>
+        <h2>You are now super fast</h2>
+        <button class="js-modal-close">Take a hike</button>
     </div>
     <main>
+        <button class="js-modal-open">Make me fast</button>
         <section>  
-               <h2>TOP</h2>
-
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula quam, accumsan sed interdum ac, molestie eu nisl. Proin dignissim dui nec elit viverra, sed iaculis metus porta. In ornare magna ut diam volutpat sagittis. Etiam quis sagittis risus, ut tincidunt magna. Nam et justo lobortis, fringilla diam id, feugiat eros. Cras sagittis ipsum sit amet turpis pretium tincidunt. Aenean nec consequat enim. Donec gravida vel eros eu pharetra. Quisque pharetra turpis sagittis lorem maximus dictum.
             </p>
@@ -89,7 +87,7 @@
             <p>
                 Aliquam quis enim porta, tempor massa id, imperdiet arcu. Donec aliquet in risus id auctor. Duis pulvinar enim faucibus venenatis aliquam. Vivamus gravida non eros sit amet tempor. Aliquam erat volutpat. Pellentesque arcu nunc, volutpat at lobortis sed, blandit et enim. Nunc ut lacinia sapien. Praesent feugiat sem sed fermentum dictum. Praesent fringilla nulla libero, non condimentum magna bibendum a. Donec fermentum, nulla volutpat dapibus ullamcorper, massa neque euismod dolor, a egestas purus leo ac nisi. Vestibulum sollicitudin diam iaculis dolor tincidunt tincidunt.
             </p>
-            <button class="js-modal-open">Make me happy</button>
+            
             <p>
                 Maecenas aliquet nec turpis at fringilla. Maecenas feugiat, quam elementum interdum sagittis, risus nisl pellentesque augue, at suscipit nisl lorem sit amet lacus. Donec enim elit, tincidunt et purus a, malesuada finibus nibh. Donec ultrices metus rhoncus molestie efficitur. Proin aliquam dignissim dolor sit amet bibendum. Aliquam venenatis, est et finibus dapibus, magna lacus facilisis augue, nec maximus eros est et urna. Donec malesuada mattis pulvinar. Integer vel auctor quam, sit amet accumsan orci. Sed placerat varius orci, sed faucibus lacus molestie quis. Mauris id magna nec risus laoreet bibendum. Mauris a ligula ut libero ultrices consectetur eget sit amet nisi. Suspendisse mi ipsum, euismod vitae feugiat eget, posuere in dolor. Curabitur dignissim elit vitae tristique tincidunt.
             </p>
@@ -120,21 +118,22 @@
             
         </section>
     </main>
+
 <script>
+    $('.js-modal-close').click(function(){
+        $('.modal').fadeOut();
+        $('#blocker').fadeOut();
+        $('body').css('overflow','auto');
+    });
 
-$('.js-modal-close').click(function(){
-    $('.modal').fadeOut();
-    $('#blocker').fadeOut();
-    $('body').css('overflow','auto');
-});
-
-$('.js-modal-open').click(function(){
-    $('.modal').fadeIn();
-    $('#blocker').fadeIn();
-    $('body').css('overflow','hidden');
-});
-
-
+    $('.js-modal-open').click(function(){
+        $('.modal').fadeIn();
+        $('#blocker').fadeIn();        
+        $('body').css('overflow','hidden');
+    });
 </script>
+    <footer>
+        
+    </footer>
 </body>
 </html>
