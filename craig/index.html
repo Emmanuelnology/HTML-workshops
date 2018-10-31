@@ -1,1 +1,82 @@
-Hello world
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0;
+            background-image: url('bg.jpg');
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center;
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+        
+        body>div{
+            background-color: red;
+            width :100%;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            padding: 20px;
+            background-color:red;
+            color:white;
+        }
+        
+        main {
+            background-color:white;
+            color:black;
+            border: 1px gray solid;
+            text-align:center;
+        }
+
+        ul {
+            list-style-type:none;
+            padding:0;
+        }
+
+        ul.shopping-list {
+            list-style-type:circle;
+            padding-left: 40px;
+            list-style-position:inside;
+            list-style-image:url('http://www.placekitten.com/10/10');
+        }
+
+
+        div {
+            height: 800px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            Nav
+        </nav>
+        <main>
+            <a href="sms:01234567890">Call a random</a>
+ 
+            <!-- Add a subject too -->
+            <a 
+                href="mailto:hey@thomasjbradley.ca?subject=How%20are%20you?">
+                Basic mail with subject
+            </a>
+             
+            <!-- Even a default body -->
+            <a href="mailto:hey@thomasjbradley.ca?subject=How%20are%20you?&body=Hey%20Thomas%0D%0AHow%20are%20you?">Mail with body</a>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .container {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        align-items: center;
+    }
+
+    .box-1, .box-2 {
+        background-color: red;
+        border: 1px darkred solid;
+        display: flex;
+        height: 50px;
+        width:450px;
+    }
+
+        @media only screen and (min-width:550px) {
+        .container {
+            background-color: black;
+            display: flex;
+            height: 150px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            border: 1px lightblue solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bx {
+            width: 250px;
+        }
+
+        .box-1{
+            width: 50px;
+            height: 50px;
+            border: 1px darkred solid;
+            background-color: red;
+
+        }
+    }
+</style>
+
+<body>
+<header>
+    <nav class="container">
+        <div class="box bx">
+            <div class="box-1">A</div>
+            <div class="box-1">B</div>
+            <div class="box-1">C</div>
+        </div>
+        <div class="box box-2">D</div>
+    </nav>
+</header>
+</body>
+
+</html>

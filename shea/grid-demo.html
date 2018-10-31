@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            nav {
+                background-color: red;
+                color: white;
+                grid-area: nav;
+                padding: 1em;
+            }
+
+            header {
+                background-color: blue;
+                color: white;
+                grid-area: header;
+                padding: 1em;
+            }
+            
+            body {
+                margin: 0;
+                display: grid;
+                grid-template-areas:
+                    "nav nav"
+                    "header header"
+                    "sidebar content"
+                    "sidebar content"
+                    "footer footer";
+                grid-template-columns: 1fr 2fr;
+                grid-gap: 10px;
+            }
+
+            main {
+                background-color: green;
+                color: white;
+                padding: 1em;
+                grid-area: content;
+            }
+
+            aside {
+                background-color: purple;
+                color: white;
+                padding: 1em;
+                grid-area: sidebar;
+            }
+
+            footer {
+                background-color: orange;
+                color: white;
+                padding: 1em;
+                grid-area: footer;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            Nav
+        </nav>
+        <header>
+            Header
+        </header>
+        <aside>
+            Sidebar
+        </aside>
+        <main>
+            Main
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </body>
+</html>
