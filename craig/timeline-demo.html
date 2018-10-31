@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin:0;
+            display:flex;
+        }
+
+        .story {
+            flex:1;
+        }
+        
+        .timeline {
+            flex:2;
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        
+        .timeline > div {
+            width:50%;
+            position:relative;
+            padding: 1em;
+        }
+        
+        .timeline > div:nth-child(even) {
+            border-left: 0.125em gray solid;
+        }
+
+        .timeline > div:nth-child(odd) {
+            border-right: 0.125em gray solid;
+            text-align: right;
+        }
+
+        .timeline > div:nth-child(even)::before {
+            content: " ";
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            border: 0.125em solid gray;
+            background-color: white;
+            position: absolute;
+            top:1em;;
+            left: -0.75em;
+        }
+
+        .timeline strong {
+            font-weight: 600;
+            display:block;
+        }        
+        
+    </style>
+</head>
+<body>
+    <div class="story">
+        Blah blah blah
+    </div>
+    <div class="timeline">
+        
+        <div> </div>
+
+        <div>
+            <div>
+                <strong>2018</strong>
+                This is content about me. This is content about me. This is content about me. This is content about me.
+            </div>
+        </div>
+        
+        <div>
+            <div>
+                This is content about me.This is content about me.This is content about me
+            </div>
+        </div>
+
+        <div > </div>
+        
+        
+    </div>
+    
+</body>
+<footer>
+    
+</footer>
+</html>
