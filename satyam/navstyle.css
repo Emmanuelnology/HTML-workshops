@@ -1,0 +1,62 @@
+*{
+    box-sizing:border-box;
+}
+.bold{
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: 'Lobster', sans-serif;
+    background-color:bisque;
+    margin: 0;
+}
+nav{
+    background-color:#bf110b;
+    color: #000;
+    text-transform: lowercase;
+    padding: 1em;
+}
+theme-light{
+    background-color: black;
+    color: #bf110b;
+}
+nav ul{
+    text-transform:uppercase;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+}
+nav li{
+    display:inline;
+    padding: 0 0.5em;
+}
+nav li a{
+    padding: 0.5em;
+}
+nav a:hover{
+    background-color:#7b5f94;
+    border-radius:4px;
+}
+nav > * {
+    display: inline;
+}
+nav #brand {
+    margin-right: 2em;
+}
+nav a{
+    padding: 0.5em;
+}
+div{
+    box-sizing:content-box;
+    height: 20em;
+}
+main {
+    padding: 1em;
+    background-color:#7b5f94;
+}
+div #skills{
+    color:red;
+}
