@@ -9,6 +9,14 @@
             display: block;
         }
 
+        form input {
+            background-color: lightgreen;
+        }
+
+        form input[type=submit] {
+            background-color: pink;
+        }
+
         fieldset {
             margin: 20px;
         }
@@ -30,10 +38,10 @@
             <fieldset nam="personal-info">
 
                 <label for="name">Name</label>
-                <input type="name" id="name" name="name" value="Cena">
+                <input type="name" id="name" name="name" required placeholder="Your name">
 
                 <label for="firstname">First name</label>
-                <input type="name" id="firstname" name="firstname">
+                <input type="name" id="firstname" name="firstname" placeholder="Your first name">
 
                 <label for="email">Email</label>
                 <input type ="email" id="email" name="email">
@@ -46,21 +54,23 @@
             <fieldset nam="hobbies">
                 <fieldset>
                     <label for="football-team-psg">
-                        <input 
-                        type="radio" 
-                        id="football-team-psg" 
-                        name="football"
-                        value="psg"
-                        > PSG
+                    <input 
+                    type="radio" 
+                    id="football-team-psg" 
+                    name="football"
+                    value="psg"
+                    > PSG
                     </label>
                     <label for="football-team-mancity">
-                            <input 
-                            type="radio" 
-                            id="football-team-mancity" 
-                            name="football"
-                            value="mancity"
-                            > Man City
+                    <input 
+                    type="radio" 
+                    id="football-team-mancity" 
+                    name="football"
+                    value="mancity"
+                    > Man City
                     </label>
+                    <label for="goodbox">Comment</label>
+                    <textarea name="goodbox" rows="15">good</textarea>
                 </fieldset>
 
                 <label for="basketball">Basketball team</label>
@@ -70,16 +80,22 @@
                     Number of stolen bikes
                 </label>
                 <input 
-                    type ="number" 
-                    id="stolenbikes" 
-                    name="stolen-bikes" 
-                    min="1" max="8"
-                    required
-                    disabled
+                type ="number" 
+                id="stolenbikes" 
+                name="stolen-bikes" 
+                min="1" max="8"
+                required
+                disabled
                 >
+
+                <select name="gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
             </fieldset>
 
             <input type="reset" />
+            <button type="reset" value="resetting"></button>
 
             <input type="submit" value="envoyer">
         </form>
