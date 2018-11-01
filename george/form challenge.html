@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <style>
+
+
+            form {
+                margin: auto;
+                width: 50%;
+            }
+
+            h1 {
+                text-align: center;
+                color: blue;
+            }
+
+            #submit {
+                background-color: green;
+                color: white;
+            }
+
+            #reset {
+                background-color: red;
+                color: white;
+            }
+
+            form label,
+            form input {
+                width: 100%;
+            }
+
+            #required {
+                color: red;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Fun form:</h1>
+        <main>
+            <form method="POST" action="https://webhook.site/e5cbf06c-a2b7-4213-9621-eaf092cc2fcf">
+                <label for="firstName">
+                    <span id="required">*</span>First name:
+                </label>
+                <input
+                    id="firstName"
+                    name="nafirstNameme"
+                    placeholder="Your first name"
+                    required
+                >
+                <label for="secondName">
+                    <span id="required">*</span>Second name:
+                </label>
+                <input
+                    id="secondName"
+                    name="secondName"
+                    placeholder="Your second name"
+                    required
+                >
+                <label for="addressFirstLine">
+                        <span id="required">*</span>Address:
+                </label>
+                <input
+                    id="addressFirstLine"
+                    name="addressFirstLine"
+                    placeholder="First line of address"
+                    required
+                >
+                <label for="addressSecondLine">
+                </label>
+                <input
+                    id="addressSecondLine"
+                    name="addressSecondLine"
+                    placeholder="Second line of address"
+                >
+
+                <label for="town">
+                </label>
+                <input
+                    id="town"
+                    name="town"
+                    placeholder="Town"
+                >
+                <label for="county">
+                </label>
+                <input
+                    id="county"
+                    name="county"
+                    placeholder="county"
+                >
+
+                <label for="postcode">
+                </label>
+                <input
+                    id="postcode"
+                    name="postcode"
+                    placeholder="postcode"
+                    required
+                >
+
+                <label for="postcode">
+                        <span id="required">*</span> How did you hear about us?
+                </label>
+                <select name="hearAbout">
+                    <option value="void">Select one:</option>
+                    <option value="email">Email</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">LinkedIn</option>
+                </select>
+                <label for="interestingFact">
+                    Tell me something interesting about yourself:
+                </label>
+                <textarea
+                    name="interestingFact"
+                    cols="40"
+                    rows="5"
+                    required
+                >
+                </textarea>
+
+                <label for="password">
+                        <span id="required">*</span>Enter your password:
+                </label>
+                <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                >
+                <label for="passwordConfirm">
+                        <span id="required">*</span>Confirm your password:
+                </label>
+                <input
+                    id="passwordConfirm"
+                    name="passwordConfirm"
+                    type="password"
+                    required
+                >
+                <label for="teaStrength">
+                    How strong do you like your tea?
+                </label>
+
+                <input
+                    name="teaStrength"
+                    type="range"
+                    min="1" max="100"
+                    value="50"
+                >
+
+                <button type="submit" id="submit">Send me your details</button>
+                <button type="reset" id="reset">Reset</button>
+            </form>
+<!-- 
+    Red asterix on required
+    formating
+    password match
+    color submit and reset
+    tea pictures
+ -->
+
+        </main>
+
+        <footer>
+            
+        </footer>
+    </body>
+</html>
