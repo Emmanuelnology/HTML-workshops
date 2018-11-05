@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shutsha Kasongo</title>
+    <style>
+        form * {
+            display: block;
+            margin-left: 2px;
+        }
+
+        fieldset {
+            margin-bottom: 2px;
+        }
+
+        .sending {
+            color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Submission form</h1>        
+        <form method="POST"
+        action="http://foo.com">
+
+            <fieldset nam="personal-info">
+
+                <label for="name">Name:</label>
+                <input type="name" id="name" name="name" required placeholder="your name">
+
+                <label for="firstname">First name:</label>
+                <input type="name" id="firstname" name="firstname" required placeholder="your first name">
+
+                <label for="address">Address:</label>
+                <textarea name="address" rows="8" value="your address"></textarea>
+
+
+            </fieldset>
+            <fieldset nam="hearingus">
+
+                <h2>Where did your hear about us ?</h2>
+                <label for="email"></label>
+                <input 
+                type="radio" 
+                id="email" 
+                name="social"
+                value="email"
+                > Email
+                
+                <label for="facebook"></label>
+                <input 
+                type="radio" 
+                id="facebook" 
+                name="social"
+                value="facebook"
+                > Facebook
+
+                <label for="linkedin"></label>
+                <input 
+                type="radio" 
+                id="linkedin" 
+                name="social"
+                value="linkedin"
+                > LinkedIn
+                
+                
+            </fieldset>
+
+            <fieldset>
+                <h2>Tell me something interesting about yourself</h2>
+                <textarea name="comment" rows="8" value="comment" minlength="25">Tell me something</textarea>
+
+            </fieldset>
+
+            <fieldset>
+                <input type="password" placeholder="Password" id="password" name="password" required>
+                <input type="password" placeholder="Confirm Password" id="confirm_password" name="password" required>
+            </fieldset>
+
+            <fieldset>
+                <h3>How do you like your tea ?</h3>
+                <select name="tea">
+                        <option value="1">Hot</option>
+                        <option value="2">Cold</option>
+                        <option value="3">Mild</option>
+                    </select>
+            </fieldset>
+
+            <input type="reset" class="sending"/>
+
+            <input type="submit" value="envoyer" class="sending">
+    
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
