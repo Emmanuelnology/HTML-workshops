@@ -2,11 +2,76 @@
 <html lang="en">
 <style>
   form * {
+    font-family: 'raleway';
+    text-align: center;
+    text-transform: capitalize;
     display: block;
   }
+  
+  button {
+    display: inline-block;
+    background-color: #59e0c9fa;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    border: 0px solid;
+    cursor: pointer;
+  }
+  
+  body {
+    background-color: darkgoldenrod;
+  }
+
+  label,
+  select {
+    display: inline-block;
+  }
+
+  fieldset {
+    padding: 15px;
+    border: none;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+    height: 25px;
+    outline: none;
+    opacity: 0.9;
+    background-color: #a9d7d1;
+  }
+
+  .slider-con {
+    width: 100%;
+  }
+
+  .milk {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+    
+  .outer {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+  }
+
 </style>
 <head>
-  
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
   <main>
@@ -14,13 +79,14 @@
     method="POST"
     action="https://webhook.site/b1ffc44a-146b-4698-bad7-ef9384208798"
     >
-    
+    <h1>How much do you like tea?</h1>
+    <div class="outer">
     <fieldset>
       
-      <h1>Name</h1>
+      <h2>Name</h2>
       
       <label for="fName">
-        First name
+        First name*
         <input 
         type="text" 
         name="firstName"
@@ -30,7 +96,7 @@
       </label>
       
       <label for="lName">
-        Last name
+        Last name*
         <input 
         type="text" 
         name="lastName"
@@ -42,10 +108,10 @@
     </fieldset>
     <fieldset>
       
-      <h1>Address</h1>
+      <h2>Address</h2>
       
       <label for="fLine">
-        First line 
+        First line*
         <input 
         type="text"
         name="firstLine"
@@ -64,7 +130,7 @@
       </label>
       
       <label for="county">
-        county
+        county*
         <input 
         type="text"
         name="County"
@@ -83,7 +149,7 @@
       </label>
       
       <label for="pCode">
-        Postcode
+        Postcode*
         <input 
         type="text"
         name="Postcode"
@@ -96,61 +162,34 @@
     
     <fieldset>
       
-      <h1>Where did you hear about us?</h1>
+      <h2>Where did you hear about us?</h2>
       
-      <label for="fBook">
-        Facebook
-        <input 
-        name="facebook"
-        id="fbBok"
-        type="checkbox"
-        >
-      </label>
+      <select name="social media"required>
+        <option>Please select one</option>
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter</option>
+        <option value="linkedin">Linked in</option>
+        <option value="email">E-mail</option>
+      </select>
       
-      <label for="twitter">
-        Twitter
-        <input 
-        name="twitter"
-        id="twitter"
-        type="checkbox"
-        >
-      </label>
       
-      <label for="linked">
-        Linked in
-        <input 
-        name="linkedIn"
-        id="linked"
-        type="checkbox"
-        >
-      </label>
-
-      <label for="email">
-          E-mail
-          <input 
-          name="email"
-          id="email"
-          type="checkbox"
-          >
-        </label>
-      
-      <h1>Tell us something interesting about yourself</h1>
+      <h2>Tell us something interesting about yourself</h2>
       
       <label for="personal">
         <textarea 
         name="personalinfo" 
-        id="personal" 
-        cols="30" 
+        id="personal"
+        cols="60"
         rows="10"
         >
       </textarea>
     </label>
-    <h1>Password</h1>
+    <h2>Password</h2>
     <label for="password"><input 
       type="password" 
       id="password" 
       name="password"
-      placeholder="Comfirm password" 
+      placeholder="Please enter password" 
       required 
       >
     </label>
@@ -164,15 +203,70 @@
       >
     </label>
   </fieldset>
+
+  <fieldset>
+    <h2>How do you like your tea?</h2>
+
+    <select name="brand of tea" id="brand">
+      <option value="none">Please select one</option>
+      <option value="pg">PG Tips</option>
+      <option value="twinnings">Twinnings</option>
+      <option value="yorkshire">Yorkshire</option>
+      <option value="teapig">Teapigs</option>
+      <option value="tetley">Tetley</option>
+      <option value="other">Other</option>
+    </select>
+
+    <p>If other please specify below</p>
+
+    <label for="brand other">
+    <input type="text" 
+    id="brand-other"
+    name="brand-other"
+    placeholder="Other">
+    </label>
+
+    <p>What milk do you put in your tea?</p>
+    <label for="type of milk">
+    <select name="type of milk">
+      <option value="none">Please select one</option>
+      <option value="regular">Regular milk</option>
+      <option value="almond">Almond milk</option>
+      <option value="soy">Soy milk</option>
+      <option value="coconut">Coconut milk</option>
+      <option value="other">Other</option>
+    </select>
+
+    <p>If other please specify below</p>
+
+    <label for="Milk other">
+    <input type="text"
+      id="milk-other"
+      name="milk-other"
+      placeholder="other">
+    </label>
+    </label>
+
+    <p>How much milk do you like in your tea?</p>
+
+    <div class="milk">
+      <p>No milk</p>
+      <p>Just milk</p>
+    </div>
+
+    <label for="milk level" class="slider-con">
+    <input type="range" min="1" max="100" class="slider">
+    </label>
+
+  </fieldset>
+</div>
   
-  
+<div class="buttons">
   <button type="sumbit">Submit form</button>
   <button type="reset">Reset the form</button>
-  
+</div>
+
 </form>
 </main>
-<footer>
-  
-</footer>
 </body>
 </html>
