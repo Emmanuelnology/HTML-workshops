@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Ubuntu" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            font-family: Josefin Sans;
+        }
+        h1 {
+            font-family: Ubuntu;
+        }
+        form > *{
+            display: block;
+        }
+    
+        form > fieldset >  * {
+            display: block;
+        }
+    
+        form input {
+            margin-bottom: 15px;
+        }
+    
+        form input[type=submit] {
+            font-family: Ubuntu;
+            background-color: rgb(226, 181, 96);
+        }
+        form input[type=reset] {
+            font-family: Ubuntu;
+            background-color: rgb(230, 107, 107);
+        }
+
+    </style>        
+    <body>
+        <main>
+        <h1 id="webcomponents">Sell Your Data Inc. Contact Form</h1>
+        <form 
+            method="POST"
+            action="https://webhook.site/fcf42b86-a96f-4566-adb4-d39dfc262541"
+        >
+            <fieldset name="personal-info">
+                <h3>Kindly enter the following details below</h3>
+                    <label for="first-name">First Name</label>
+                    <input 
+                        required
+                        name="first-name"
+                        id="first-name" 
+                        placeholder="e.g.The Real"    
+                    >
+                    <label for="last-name">Last Name</label>
+                    <input 
+                        required
+                        name="last-name"
+                        id="last-name" 
+                        placeholder="e.g.Kieran" 
+                    >
+                    <label for="address">Address</label>
+                    <textarea 
+                        name="address" 
+                        rows="4" 
+                        placeholder="e.g. 1 Example Street, Nowhere, Big City, EX44MPL"></textarea> 
+                    
+                    <label for="where-">Where did you hear about us?</label>
+                    <select name="">
+                        <option value="email">E-mail</option>
+                        <option value="face">Facebook</option>
+                        <option value="face">LinkedIn</option>
+                    </select>
+                    <label for="interesting-fact">Tell me something interesting about yourself</label>
+                    <textarea 
+                        name="interesting-fact" 
+                        rows="5" 
+                        placeholder="e.g. I like trains especially when they are never on time and dont take you where you have to be"></textarea> 
+                    <label for="password">Enter Password</label>
+                    <input 
+                        required
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required
+                        minlength="5"
+                        maxlength="16"
+                    >
+                    <label for="password">Confirm Password</label>
+                    <input 
+                        required
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required
+                        minlength="5"
+                        maxlength="16"
+                    >
+                    <label for="tea">How do you like your tea?</label>
+                    <textarea 
+                        required
+                        name="interesting-fact" 
+                        rows="2" 
+                        placeholder="e.g. Drinkable"></textarea>
+            </fieldset>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

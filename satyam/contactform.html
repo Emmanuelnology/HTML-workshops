@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        
+    </head>
+    <style>
+    form > *{
+        display: block;
+    }
+
+    form > fieldset >  * {
+        display: block;
+    }
+
+    form input {
+        margin-bottom: 15px;
+    }
+
+    form input[type=submit] {
+        background-color: orange;
+    }
+
+    </style>
+    <body>
+        <main>
+            <h1 id="webcomponents">UWOTm8</h1>
+            <form 
+            method="POST"
+            action="https://webhook.site/fcf42b86-a96f-4566-adb4-d39dfc262541"
+            >
+                <fieldset name="login">
+                    <label for="email">Yer mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                    >
+    
+                    <label for="pword">Yer paword</label>
+                    <input 
+                        type="password" 
+                        id="pword" 
+                        name="password" 
+                        required
+                        minlength="5"
+                        maxlength="16"
+                    >
+                </fieldset>
+
+                <fieldset name="personal-info">
+                    <label for="name">Yer nem</label>
+                    <input 
+                        id="name" 
+                        name="name"
+                        placeholder="e.g.Satybhai"    
+                    >
+
+                    <label for="dob">Yer baffdeh</label>
+                    <input type="date" id="dob" name="dob">
+    
+                    <label for="mum">Ya mum</label>
+                    <input id="mum" name="mum">
+                    
+                    <label for="number">Yer num</label>
+                    <input id="number" name="number">
+                    
+                    <label for="stolen-bikes">Yer num of stolen bikes</label>
+                    <input 
+                        id="stolen-bikes"
+                        name="stolenBikes"
+                        type="number" 
+                        min="1" max="8" 
+                        required 
+                        disabled
+                    >
+                    
+                    <label for=footeh>Yer footeh team</label>
+                    
+                        <label for=footeh-not-spurs>
+                        <input 
+                            id="footeh-not-spurs"
+                            name="foooteh"
+                            type="checkbox"
+                            value="shite"
+                        > not fookin spurs
+                        </label>
+
+                        <label for=footeh-arsenal>
+                        <input 
+                        id="footeh-arsenal"
+                        name="foooteh"
+                        type="checkbox"
+                        value="AAAAAAAARSENAL"
+                        > AAAAAAAARSENAL
+                        </label>
+
+                        <label for=footeh-madrid>
+                        <input 
+                            id="footeh-not-spurs"
+                            name="laliga"
+                            type="checkbox"
+                            value="currentlymeh"
+                        > hala madrid 
+                        </label>
+
+                        <label for=footeh-barc>
+                        <input 
+                        id="footeh-barc"
+                        name="laliga"
+                        type="checkbox"
+                        value="spanishshite"
+                        > uefalona
+                        </label>
+                        <label for="lulbox">Enter ya lul</label>
+                        <textarea name="lulbox" rows="5">lul</textarea>
+
+                        <label for="swegz">Select how many swegz u possess</label>
+                        <select name="swegz">
+                            <option value="none">no swegz 4 u</option>
+                            <option value="41">all 41 available</option>
+                        </select>
+
+                        <button type ="reset">Clear ya bs</button>
+                    
+                </fieldset>
+                
+                <button type ="reset">Clear ya bs</button>
+                <input type="reset" value="Reset">
+                <input type="submit" value="send yer bank acownt deatails">
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>
