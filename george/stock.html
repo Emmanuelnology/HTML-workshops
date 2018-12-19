@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <style>
+            form > * {
+                display: block;
+            }
+
+            form > fieldset {
+                margin-bottom: 20px;
+            }
+
+            form input {
+                margin-bottom: 15px;
+                background-color: yellow;
+            }
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <h1>Web components</h1>
+            <form method="POST" action="https://webhook.site/e5cbf06c-a2b7-4213-9621-eaf092cc2fcf">
+                <fieldset name="login">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email"  name="email">
+
+                    <label for="password">Password:</label>
+                    <input
+                        id="password"
+                        required
+                        minlength="5"
+                        type="password"
+                        name="password"
+                    >
+                </fieldset>
+
+                <fieldset name="Sign up">
+                    <label for="name">Name:</label>
+                    <input
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        required
+                    >
+                </fieldset>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input id="dob" type="date" name="date">
+                    
+                    <label for="phone">Phone:</label>
+                    <input
+                        id="phone"
+                        name="phone"
+                        value="07"    
+                    >
+
+                    <label for="stolen-bikes">
+                        Number of stolen bikes:
+                    </label>
+                    <input
+                        name="stolenBikes"
+                        id="stolen-bikes"
+                        type="number"
+                        min="1" max="8"
+                        required
+                        disabled
+                    >
+
+                    <label for="maiden">Mothers maiden name:</label>
+                    <input id="maiden" name="maiden">
+
+                    <fieldset>
+                        <label for="football-team-mancity">Favourite football team:
+                            <input
+                                type="radio"
+                                id="football-team-mancity"
+                                name="football"
+                                value="Man City"
+                            >
+                            Manchester City
+                        </label>
+                        <label for="football-team-manutd">
+                            <input
+                                type="radio"
+                                id="football-team-manutd"
+                                name="football"
+                                value="Man City"
+                            >
+                            Manchester United
+                        </label>
+                        <label for="rugby-team-bristol">
+                                <input
+                                    type="radio"
+                                    id="rugby-team-bristol"
+                                    name="rugby"
+                                    value="Man City"
+                                >
+                                Manchester rugby
+                            </label>
+                    </fieldset>
+
+                    <select name="homeAway">
+                        <option value="home">Home</option>
+                        <option value="away">Away</option>
+                    </select>
+                <input type="reset" value="reset">
+                <input id="submit" type="submit" value="Send details"> 
+            </form>
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

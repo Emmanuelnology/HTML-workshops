@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<style>
+  form  * {
+    display: block;
+  }
+  
+  form input {
+    margin-bottom: 15px;
+  }
+
+  form input[type=number] {
+    background-color: black;
+    color: white;
+    margin-bottom: 0;
+
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+  }
+
+</style>
+
+<head>
+  
+</head>
+
+<body>
+  <main>
+    <h1>web components</h1>
+    <form 
+    method="POST"
+    action="https://webhook.site/b1ffc44a-146b-4698-bad7-ef9384208798">
+    
+    <fieldset name="Log-in">
+      <label for="name">Name</label>
+      <input 
+      type="text" 
+      id="name" 
+      name="name" 
+      placeholder="Name"
+      required
+      >
+      
+      <label for="password">Password</label>
+      <input 
+      type="password" 
+      id="password" 
+      name="password" 
+      required 
+      minlength="3"
+      placeholder="password"
+      >
+    </fieldset>
+    
+    <fieldset name="Personal information">
+      <label for="dob">DOB</label>
+      <input 
+      type="date" 
+      name="dob"
+      >
+      
+      <label for="email">E-mail</label>
+      <input 
+      type="email" 
+      name="email"
+      placeholder="your_name@google.com"
+      >
+      
+      <fieldset>
+        <label for="football-team-mancity">
+          <input 
+          type="radio"
+          id="football-team-mancity"
+          name="football"
+          value="mancity"
+          > manchester city
+        </label>
+        
+        <label for="football-team-manunited">
+          <input 
+          type="radio"
+          id="football-team-manunited"
+          name="football"
+          value="manu"
+          > manchester united
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="rugby-team-mancity">
+          <input 
+          type="checkbox"
+          id="rugby-team-mancity"
+          name="rugby-1"
+          > manchester city
+        </label>
+        
+        <label for="rugby-team-manunited">
+          <input 
+          type="checkbox"
+          id="rugby-team-manunited"
+          name="rugby-2"
+          > manchester united
+        </label>
+
+        <textarea name="booBox" id="" cols="30" rows="10">Boo</textarea>
+      </fieldset>
+
+      <label for="moblie">Moblie</label>
+      <input type="number" id="moblie" name="moblie">
+      
+      <label for="bikes">
+        Number of stolen bikes
+      </label>
+      <input 
+      name="bikes"
+      id="bikes" 
+      type="number" 
+      min="1"
+      max="8" 
+      required
+      disabled
+      >
+    </fieldset>
+    <input type="reset" value="reset">
+    <input type="submit" value="log-in">
+  </form>
+</main>
+<footer>
+  
+</footer>
+</body>
+
+</html>

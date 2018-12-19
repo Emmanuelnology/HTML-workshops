@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+        * {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+        }
+        
+        p {
+            margin: 20px 0;
+        }
+        
+        button {
+            padding:15px;
+            border-radius: 10px;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .modal {
+          display: none;
+          position: fixed;
+          left: 20%;
+          right: 20%;
+          top: 20%;
+          bottom:40%;
+          background-color: blue;
+          padding: 20px;
+          border-radius: 20%;
+          border: 1px grey solid;
+        }
+      
+        #blocker {
+          display: none;
+          background-color: rgba(0, 0, 0, 0.7);
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+  <div class="modal-ibm">
+    <h2>you pressed me!</h2>
+    <button class="js-modal-close-ibm">close me</button>
+  </div>
+    <main>
+        <img class="js-modal-open-ibm" src="../luke/ibm.png" alt="">
+    </main>
+    <script>
+    $(".js-modal-close-ibm").click(function(){
+      $(".modal-ibm").hide(); 
+      $(".modal-ibm").fadeout();
+    });
+    $(".js-modal-open-ibm").click(function(){
+      $(".modal-ibm").show();
+      $(".modal-ibm").fadein();
+    });
+    </script>
+</body>
+</html>
